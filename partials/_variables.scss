@@ -1,0 +1,30 @@
+// === THEME: light, dark ===
+$theme: dark;
+
+
+// === COLORS ===
+$body-background: #fff;
+$header-background: rgb(75, 15, 60);
+$text-header: #fff;
+$footer-background: rgb(75, 15, 60);
+$text-footer: #fff;
+$text-color: #000;
+$button-background: rgb(75, 15, 60); 
+$ordinary-border: 2px solid #000;
+
+// === SIZES ===
+$header-height: 50px;
+$footer-height: 50px;
+
+@if $theme == dark {
+    $body-background: #000;
+    $text-color: #fff;
+    $header-background: rgba(23, 187, 209, 0.616);
+    $footer-background: rgba(23, 187, 209, 0.616);
+    $button-background: rgba(23, 187, 209, 0.616);
+    $ordinary-border: 2px solid #fff;
+
+    $header-height: 80px;
+    $footer-height: 80px;
+
+}

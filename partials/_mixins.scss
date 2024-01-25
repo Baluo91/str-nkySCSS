@@ -1,0 +1,33 @@
+@mixin container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+@mixin header-style {
+    background: $header-background;
+    color: $text-header;
+    text-align: center;
+}
+
+@mixin footer-style {
+    background: $footer-background;
+    color: $text-footer;
+    text-align: center;
+}
+
+@mixin theme-box {
+    width: 6 * col-width();
+}
+
+@mixin my-border-radius($radius: 15px){
+    border-radius: $radius;
+}
+
+@mixin button {
+    text-decoration: none;
+    background: $button-background;
+    color: #fff;
+    padding: 10px 15px;
+    border: $ordinary-border;
+    @include my-border-radius;
+}
